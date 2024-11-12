@@ -1,5 +1,6 @@
 package com.hemanttechie.repository;
 
+
 import com.hemanttechie.entity.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

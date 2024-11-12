@@ -1,21 +1,21 @@
 package com.hemanttechie.service.impl;
 
+
+
 import com.hemanttechie.entity.Inventory;
 import com.hemanttechie.repository.InventoryRepository;
 import com.hemanttechie.service.InventoryService;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 @Service
 @Slf4j
+@RequiredArgsConstructor
 public class InventoryServiceImpl implements InventoryService {
 
-    private InventoryRepository inventoryRepository;
-    public  InventoryServiceImpl(){}
+    private final InventoryRepository inventoryRepository;
 
-    public InventoryServiceImpl(InventoryRepository inventoryRepository) {
-        this.inventoryRepository = inventoryRepository;
-    }
 
     @Override
     public Inventory getInventoryByProductId(Long productId) {

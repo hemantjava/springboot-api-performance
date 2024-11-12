@@ -12,10 +12,10 @@ INSERT INTO `products` (`id`, `category_id`, `name`, `description`, `status`) VA
 
 -- Insert data into price table
 INSERT INTO `price` (`id`, `product_id`, `price`, `valid_from`, `valid_to`, `status`) VALUES
-                                                                                          (1, 1, 699.99, NOW(), DATE_ADD(NOW(), INTERVAL 1 YEAR), 'active'),
-                                                                                          (2, 2, 1299.99, NOW(), DATE_ADD(NOW(), INTERVAL 1 YEAR), 'active'),
-                                                                                          (3, 3, 59.99, NOW(), DATE_ADD(NOW(), INTERVAL 1 YEAR), 'active'),
-                                                                                          (4, 4, 299.99, NOW(), DATE_ADD(NOW(), INTERVAL 1 YEAR), 'active');
+                                                                                          (1, 1, 699.99, NOW(), NOW(), 'active'),
+                                                                                          (2, 2, 1299.99, NOW(), NOW(), 'active'),
+                                                                                          (3, 3, 59.99, NOW(), NOW(), 'active'),
+                                                                                          (4, 4, 299.99, NOW(), NOW(), 'active');
 
 -- Insert data into inventory table
 INSERT INTO `inventory` (`id`, `product_id`, `warehouse_id`, `available_quantity`, `reserved_quantity`, `status`) VALUES
